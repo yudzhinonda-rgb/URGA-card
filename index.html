@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифрова візитка НТЦ МААК "УРГА"</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            font-size: 22px;
+            color: #1a3a5a;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .about {
+            margin-bottom: 25px;
+            color: #444;
+        }
+        .about h2 {
+            font-size: 18px;
+            color: #1a3a5a;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .about p {
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        /* Стилізація списку, що розкривається */
+        details {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+        summary {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: #333;
+            cursor: pointer;
+            padding: 5px;
+            outline: none;
+            list-style: none; /* Прибираємо стандартну стрілочку */
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Прибираємо стрілочку в Safari */
+        }
+        summary:after {
+            content: " ▼"; /* Додаємо власну позначку */
+            font-size: 12px;
+            color: #0056b3;
+        }
+        details[open] summary:after {
+            content: " ▲";
+        }
+        
+        .services-list {
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #444;
+            margin: 0;
+        }
+        .services-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-block {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #0056b3;
+        }
+        .contact-name {
+            font-weight: bold;
+            display: block;
+            font-size: 16px;
+            color: #333;
+        }
+        .contact-pos {
+            font-size: 13px;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-email {
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        .btn:hover {
+            background-color: #003d7a;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .map-link {
+            color: #d9534f;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <img src="https://via.placeholder.com/120x60?text=URGA" alt="Логотип МААК УРГА">
+        <h1>ПрАТ МААК "УРГА"</h1>
+    </div>
+
+    <div class="about">
+        <h2>Навчально-тренувальний центр з авіаційної безпеки</h2>
+        <p>Здійснюємо сертифіковану підготовку, перепідготовку та підвищення кваліфікації персоналу з авіаційної безпеки.</p>
+        
+        <details>
+            <summary>Проводимо підготовку за такими програмами</summary>
+            <ul class="services-list">
+                <li>Програма підготовки інспекторів контролю якості авіаційної безпеки суб'єктів авіаційної діяльності;</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки членів екіпажів повітряних суден, які виконують авіаційні перевезення в інших державах;</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки персоналу з технічного обслуговування та інженерного забезпечення повітряних суден авіакомпанії;</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки керівного складу експлуатантів, які виконують авіаційні роботи;</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки льотного складу експлуатантів, які виконують авіаційні роботи;</li>
+                <li>Програма періодичної підготовки інструкторів з авіаційної безпеки;</li>
+                <li>Програма підготовки працівників ПрАТ «МААК «УРГА», які не відносяться до авіаційного персоналу.</li>
+            </ul>
+        </details>
+    </div>
+
+    <div class="contact-block">
+        <span class="contact-pos">Директор НТЦ з АБ МААК "УРГА"</span>
+        <span class="contact-name">Соколов Олександр</span>
+        <a href="mailto:sokolov@urga.aero" class="contact-email">📧 sokolov@urga.aero</a>
+        <a href="tel:+380675203109" class="btn">📞 Зателефонувати: +38 0675203109</a>
+    </div>
+
+    <div class="contact-block">
+        <span class="contact-pos">Начальник відділу дистанційного навчання</span>
+        <span class="contact-name">Кравченко Євгеній</span>
+        <a href="mailto:avsec@airurga.com.ua" class="contact-email">📧 avsec@airurga.com.ua</a>
+        <a href="tel:+380675204258" class="btn">📞 Зателефонувати: +38 0675204258</a>
+    </div>
+
+    <div class="footer">
+        <a href="https://maps.app.goo.gl/Gxwux3HDAgVx9xc36" target="_blank" class="map-link">📍 Ми на карті (Google Maps)</a>
+    </div>
+</div>
+
+</body>
+</html>
