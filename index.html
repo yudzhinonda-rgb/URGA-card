@@ -71,13 +71,13 @@
             cursor: pointer;
             padding: 5px;
             outline: none;
-            list-style: none; /* Прибираємо стандартну стрілочку */
+            list-style: none;
         }
         summary::-webkit-details-marker {
-            display: none; /* Прибираємо стрілочку в Safari */
+            display: none;
         }
         summary:after {
-            content: " ▼"; /* Додаємо власну позначку */
+            content: " ▼";
             font-size: 12px;
             color: #0056b3;
         }
@@ -143,6 +143,14 @@
         .btn:hover {
             background-color: #003d7a;
         }
+        
+        /* Стиль для іконки трубки */
+        .phone-icon {
+            margin-right: 10px;
+            fill: #32CD32; /* Світло-зелений колір (LimeGreen) */
+            flex-shrink: 0;
+        }
+
         .footer {
             text-align: center;
             margin-top: 20px;
@@ -161,7 +169,7 @@
 
 <div class="card">
     <div class="header">
-        <img src="https://drive.google.com/thumbnail?id=106agkwykm5yNpijKM76sHEajHcTTf1nn&sz=w1000" alt="Лого1 МААК УРГА">
+        <img src="https://drive.google.com/thumbnail?id=106agkwykm5yNpijKM76sHEajHcTTf1nn&sz=w1000" alt="Логотип МААК УРГА">
         <h1>ПрАТ МААК "УРГА"</h1>
     </div>
 
@@ -187,24 +195,30 @@
         <span class="contact-pos">Директор НТЦ з АБ МААК "УРГА"</span>
         <span class="contact-name">Соколов Олександр</span>
         <a href="mailto:sokolov@urga.aero" class="contact-email">📧 sokolov@urga.aero</a>
-        <a href="tel:+380675203109" class="btn">📞 Зателефонувати: +38 0675203109</a>
+        <a href="tel:+380675203109" class="btn">
+            <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Зателефонувати: +38 0675203109
+        </a>
     </div>
 
     <div class="contact-block">
         <span class="contact-pos">Начальник відділу дистанційного навчання</span>
         <span class="contact-name">Кравченко Євгеній</span>
         <a href="mailto:avsec@airurga.com.ua" class="contact-email">📧 avsec@airurga.com.ua</a>
-        <a href="tel:+380675204258" class="btn">📞 Зателефонувати: +38 0675204258</a>
+        <a href="tel:+380675204258" class="btn">
+            <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Зателефонувати: +38 0675204258
+        </a>
     </div>
 
     <div class="footer">
-        <a href="https://maps.app.goo.gl/Gxwux3HDAgVx9xc36" target="_blank" class="map-link">📍 Ми на карті (Google Maps)</a>
+        <a href="https://www.google.com/maps?q=48.5100,32.2600" target="_blank" class="map-link">📍 Ми на карті (Google Maps)</a>
     </div>
 </div>
 
 </body>
-
 </html>
-
-
-
