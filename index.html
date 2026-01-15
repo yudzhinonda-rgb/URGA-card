@@ -56,7 +56,37 @@
             margin-bottom: 15px;
         }
 
-        /* Стилізація списку, що розкривається */
+        /* Новий блок сертифікації */
+        .cert-block {
+            background: #fff9f0;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ffeeba;
+            text-align: center;
+        }
+        .cert-title {
+            font-weight: bold;
+            color: #856404;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .cert-info {
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        .btn-cert {
+            background-color: #f39c12 !important;
+            margin-top: 5px;
+        }
+        .btn-cert:hover {
+            background-color: #e67e22 !important;
+        }
+
         details {
             background: #f8f9fa;
             border-radius: 10px;
@@ -72,9 +102,6 @@
             padding: 5px;
             outline: none;
             list-style: none;
-        }
-        summary::-webkit-details-marker {
-            display: none;
         }
         summary:after {
             content: " ▼";
@@ -144,9 +171,8 @@
             background-color: #003d7a;
         }
         
-        .phone-icon {
+        .icon {
             margin-right: 10px;
-            fill: #32CD32;
             flex-shrink: 0;
         }
 
@@ -184,8 +210,23 @@
         <h2>Навчально-тренувальний центр з авіаційної безпеки</h2>
         <p>Здійснюємо сертифіковану підготовку, перепідготовку та підвищення кваліфікації персоналу з авіаційної безпеки.</p>
         
+        <div class="cert-block">
+            <span class="cert-title">Сертифікований центр</span>
+            <div class="cert-info">
+                <strong>Сертифікат № UA/AS-01/2024</strong> <br>
+                Виданий Державіаслужбою України<br>
+                Дійсний до: <strong>30.12.2026</strong>
+            </div>
+            <a href="https://drive.google.com/thumbnail?id=1Zy5cqYDoy4eVCvIHkLUIRdJqrfXydaVX&sz=w1200" target="_blank" class="btn btn-cert">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                </svg>
+                Переглянути сертифікат
+            </a>
+        </div>
+
         <details>
-            <summary>Проводимо підготовку за такими програмами</summary>
+            <summary>Програми підготовки</summary>
             <ul class="services-list">
                 <li>Програма підготовки інспекторів контролю якості авіаційної безпеки суб'єктів авіаційної діяльності.</li>
                 <li>Програма періодичної підготовки з авіаційної безпеки членів екіпажів повітряних суден, які виконують авіаційні перевезення в інших державах.</li>
@@ -203,7 +244,7 @@
         <span class="contact-name">Соколов Олександр</span>
         <a href="mailto:sokolov@urga.aero" class="contact-email">📧 sokolov@urga.aero</a>
         <a href="tel:+380675203109" class="btn">
-            <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="#32CD32">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
             </svg>
             Зателефонувати: +38 0675203109
@@ -215,7 +256,7 @@
         <span class="contact-name">Кравченко Євгеній</span>
         <a href="mailto:avsec@airurga.com.ua" class="contact-email">📧 avsec@airurga.com.ua</a>
         <a href="tel:+380675204258" class="btn">
-            <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="#32CD32">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
             </svg>
             Зателефонувати: +38 0675204258
