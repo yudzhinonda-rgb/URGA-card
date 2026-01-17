@@ -9,31 +9,26 @@
       gtag('config', 'G-YNP3V1G5L1');
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цифрова візитка НТЦ МААК "УРГА"</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
             margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            width: 100%;
+            padding: 20px 0;
         }
         .card {
             background: white;
-            width: 95%;
+            width: 90%;
             max-width: 500px;
             padding: 25px;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            margin: 20px auto;
         }
         .header {
             text-align: center;
@@ -67,6 +62,7 @@
             line-height: 1.5;
             margin-bottom: 15px;
         }
+
         .cert-block {
             background: #fff9f0;
             padding: 15px;
@@ -93,6 +89,10 @@
             background-color: #f39c12 !important;
             margin-top: 5px;
         }
+        .btn-cert:hover {
+            background-color: #e67e22 !important;
+        }
+
         details {
             background: #f8f9fa;
             border-radius: 10px;
@@ -109,8 +109,15 @@
             outline: none;
             list-style: none;
         }
-        summary:after { content: " ▼"; font-size: 12px; color: #0056b3; }
-        details[open] summary:after { content: " ▲"; }
+        summary:after {
+            content: " ▼";
+            font-size: 12px;
+            color: #0056b3;
+        }
+        details[open] summary:after {
+            content: " ▲";
+        }
+        
         .services-list {
             text-align: left;
             padding-left: 20px;
@@ -120,7 +127,10 @@
             color: #444;
             margin: 0;
         }
-        .services-list li { margin-bottom: 10px; }
+        .services-list li {
+            margin-bottom: 10px;
+        }
+
         .contact-block {
             background: #f8f9fa;
             padding: 15px;
@@ -129,9 +139,25 @@
             margin-bottom: 15px;
             border-left: 5px solid #0056b3;
         }
-        .contact-name { font-weight: bold; display: block; font-size: 16px; color: #333; }
-        .contact-pos { font-size: 13px; color: #666; display: block; margin-bottom: 5px; }
-        .contact-email { color: #0056b3; text-decoration: none; font-size: 14px; display: block; margin-bottom: 12px; }
+        .contact-name {
+            font-weight: bold;
+            display: block;
+            font-size: 16px;
+            color: #333;
+        }
+        .contact-pos {
+            font-size: 13px;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-email {
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 12px;
+        }
         .btn {
             display: inline-flex;
             align-items: center;
@@ -139,13 +165,23 @@
             width: 100%;
             padding: 12px;
             background-color: #0056b3;
-            color: white !important;
+            color: white;
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+            transition: background 0.3s;
+            box-sizing: border-box;
             font-size: 15px;
         }
-        .icon { margin-right: 10px; flex-shrink: 0; }
+        .btn:hover {
+            background-color: #003d7a;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
         .footer {
             text-align: center;
             margin-top: 20px;
@@ -155,9 +191,17 @@
             flex-direction: column;
             gap: 10px;
         }
-        .footer a { text-decoration: none; font-weight: bold; font-size: 14px; }
-        .map-link { color: #d9534f; }
-        .web-link { color: #0056b3; }
+        .footer a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .map-link {
+            color: #d9534f;
+        }
+        .web-link {
+            color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -170,7 +214,7 @@
 
     <div class="about">
         <h2>Навчально-тренувальний центр з авіаційної безпеки</h2>
-        <p>Здійснюємо сертифіковану підготовку персонал з авіаційної безпеки.</p>
+        <p>Здійснюємо сертифіковану підготовку, перепідготовку та підвищення кваліфікації персоналу з авіаційної безпеки.</p>
         
         <div class="cert-block">
             <span class="cert-title">Сертифікований центр</span>
@@ -190,9 +234,13 @@
         <details>
             <summary>Програми підготовки</summary>
             <ul class="services-list">
-                <li>Програми підготовки інспекторів та персоналу АБ.</li>
-                <li>Періодична підготовка екіпажів та інженерного складу.</li>
-                <li>Підготовка інструкторів з авіаційної безпеки.</li>
+                <li>Програма підготовки інспекторів контролю якості авіаційної безпеки суб'єктів авіаційної діяльності.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки членів екіпажів повітряних суден, які виконують авіаційні перевезення в інших державах.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки персоналу з технічного обслуговування та інженерного забезпечення повітряних суден авіакомпанії.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки керівного складу експлуатантів, які виконують авіаційні роботи.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки льотного складу експлуатантів, які виконують авіаційні роботи.</li>
+                <li>Програма періодичної підготовки інструкторів з авіаційної безпеки.</li>
+                <li>Програма підготовки працівників ПрАТ «МААК «УРГА», які не відносяться до авіаційного персоналу.</li>
             </ul>
         </details>
     </div>
@@ -202,6 +250,9 @@
         <span class="contact-name">Соколов Олександр</span>
         <a href="mailto:sokolov@urga.aero" class="contact-email">📧 sokolov@urga.aero</a>
         <a href="tel:+380675203109" class="btn">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="#32CD32">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
             Зателефонувати: +38 0675203109
         </a>
     </div>
@@ -211,13 +262,16 @@
         <span class="contact-name">Кравченко Євгеній</span>
         <a href="mailto:avsec@airurga.com.ua" class="contact-email">📧 avsec@airurga.com.ua</a>
         <a href="tel:+380675204258" class="btn">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="#32CD32">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
             Зателефонувати: +38 0675204258
         </a>
     </div>
 
     <div class="footer">
         <a href="https://urga.aero/aviation-security/" target="_blank" class="web-link">🌐 Офіційний сайт: urga.aero</a>
-        <a href="https://www.google.com/maps?q=48.5106,32.2662" target="_blank" class="map-link">📍 Ми на карті</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=МААК+УРГА+Кропивницький" target="_blank" class="map-link">📍 Ми на карті (Google Maps)</a>
     </div>
 </div>
 
