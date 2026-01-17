@@ -7,42 +7,276 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+
           gtag('config', 'G-YNP3V1G5L1');
         </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сертифікат НТЦ з АБ</title>
+    <title>Цифрова візитка НТЦ МААК "УРГА"</title>
     <style>
         body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
             margin: 0;
-            padding: 0;
-            background-color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px 0;
         }
-        img {
-            max-width: 100%;
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 120px;
             height: auto;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
         }
-        .back-btn {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            background: rgba(255,255,255,0.8);
-            text-decoration: none;
-            color: #000;
-            border-radius: 5px;
-            font-family: sans-serif;
+        .header h1 {
+            font-size: 22px;
+            color: #1a3a5a;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .about {
+            margin-bottom: 25px;
+            color: #444;
+        }
+        .about h2 {
+            font-size: 18px;
+            color: #1a3a5a;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .about p {
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        /* Новий блок сертифікації */
+        .cert-block {
+            background: #fff9f0;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ffeeba;
+            text-align: center;
+        }
+        .cert-title {
             font-weight: bold;
+            color: #856404;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .cert-info {
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        .btn-cert {
+            background-color: #f39c12 !important;
+            margin-top: 5px;
+        }
+        .btn-cert:hover {
+            background-color: #e67e22 !important;
+        }
+
+        details {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+        summary {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: #333;
+            cursor: pointer;
+            padding: 5px;
+            outline: none;
+            list-style: none;
+        }
+        summary:after {
+            content: " ▼";
+            font-size: 12px;
+            color: #0056b3;
+        }
+        details[open] summary:after {
+            content: " ▲";
+        }
+        
+        .services-list {
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #444;
+            margin: 0;
+        }
+        .services-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-block {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #0056b3;
+        }
+        .contact-name {
+            font-weight: bold;
+            display: block;
+            font-size: 16px;
+            color: #333;
+        }
+        .contact-pos {
+            font-size: 13px;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-email {
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        .btn:hover {
+            background-color: #003d7a;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .map-link {
+            color: #d9534f;
+        }
+        .web-link {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-btn">← Назад</a>
-    <img src="https://drive.google.com/thumbnail?id=1Zy5cqYDoy4eVCvIHkLUIRdJqrfXydaVX&sz=w1600" alt="Сертифікат">
+
+<div class="card">
+    <div class="header">
+        <img src="https://drive.google.com/thumbnail?id=106agkwykm5yNpijKM76sHEajHcTTf1nn&sz=w1000" alt="Логотип МААК УРГА">
+        <h1>ПрАТ МААК "УРГА"</h1>
+    </div>
+
+    <div class="about">
+        <h2>Навчально-тренувальний центр з авіаційної безпеки</h2>
+        <p>Здійснюємо сертифіковану підготовку, перепідготовку та підвищення кваліфікації персоналу з авіаційної безпеки.</p>
+        
+        <div class="cert-block">
+            <span class="cert-title">Сертифікований центр</span>
+            <div class="cert-info">
+                <strong>Сертифікат № UA/AS-01/2024</strong> <br>
+                Виданий Державіаслужбою України<br>
+                Дійсний до: <strong>30.12.2026</strong>
+            </div>
+            <a href="cert.html" class="btn btn-cert">
+               <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+               <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+               </svg>
+               Переглянути сертифікат
+            </a>
+        </div>
+
+        <details>
+            <summary>Програми підготовки</summary>
+            <ul class="services-list">
+                <li>Програма підготовки інспекторів контролю якості авіаційної безпеки суб'єктів авіаційної діяльності.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки членів екіпажів повітряних суден, які виконують авіаційні перевезення в інших державах.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки персоналу з технічного обслуговування та інженерного забезпечення повітряних суден авіакомпанії.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки керівного складу експлуатантів, які виконують авіаційні роботи.</li>
+                <li>Програма періодичної підготовки з авіаційної безпеки льотного складу експлуатантів, які виконують авіаційні роботи.</li>
+                <li>Програма періодичної підготовки інструкторів з авіаційної безпеки.</li>
+                <li>Програма підготовки працівників ПрАТ «МААК «УРГА», які не відносяться до авіаційного персоналу.</li>
+            </ul>
+        </details>
+    </div>
+
+    <div class="contact-block">
+        <span class="contact-pos">Директор НТЦ з АБ МААК "УРГА"</span>
+        <span class="contact-name">Соколов Олександр</span>
+        <a href="mailto:sokolov@urga.aero" class="contact-email">📧 sokolov@urga.aero</a>
+        <a href="tel:+380675203109" class="btn">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="#32CD32">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Зателефонувати: +38 0675203109
+        </a>
+    </div>
+
+    <div class="contact-block">
+        <span class="contact-pos">Начальник відділу дистанційного навчання</span>
+        <span class="contact-name">Кравченко Євгеній</span>
+        <a href="mailto:avsec@airurga.com.ua" class="contact-email">📧 avsec@airurga.com.ua</a>
+        <a href="tel:+380675204258" class="btn">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="#32CD32">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Зателефонувати: +38 0675204258
+        </a>
+    </div>
+
+    <div class="footer">
+        <a href="https://urga.aero/aviation-security/" target="_blank" class="web-link">🌐 Офіційний сайт: urga.aero</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=МААК+УРГА+Кропивницький" target="_blank" class="map-link">📍 Ми на карті (Google Maps)</a>
+    </div>
+</div>
+
 </body>
 </html>
