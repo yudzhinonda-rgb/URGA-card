@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Соколов Олександр
+ORG:ПрАТ МААК УРГА;Навчально-тренувальний центр з АБ
+TITLE:Директор НТЦ з АБ
+TEL;TYPE=CELL,VOICE:+380675203109
+EMAIL;TYPE=PREF,INTERNET:sokolov@urga.aero
+URL:https://urga.aero
+END:VCARD
